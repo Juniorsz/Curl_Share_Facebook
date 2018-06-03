@@ -7,12 +7,12 @@
 
   $page = json_decode(request("https://graph.facebook.com/me/accounts?access_token=$access_token"),TRUE);
   $get_posts = json_decode(request("https://graph.facebook.com/$id/feed?limit=1&access_token=$access_token"),TRUE);
-  $firt_post_id = $get_posts['data'][0]['id'];
+  $first_post_id = $get_posts['data'][0]['id'];
   
   foreach($page['data'] as $data){
 
 	  if(!in_array($data['id'],$page_avoid)){
-	    $result = request("https://graph.facebook.com/$firt_post_id/sharedposts?method=POST&access_token=".$data['access_token']."\n");
+	    $result = request("https://graph.facebook.com/$first_post_id/sharedposts?method=POST&access_token=".$data['access_token']."\n");
 		sleep(2);
 	  }
   }
@@ -21,12 +21,12 @@
   $file = fopen('log.txt','a');
   if($response['error']){
 	  echo "Thất bại !!! Bài viết phải ở chế độ công khai";
-	  fwrite($file,"$time : $firt_post_id - Lỗi !!! \n");
+	  fwrite($file,"$time : $first_post_id - Lỗi !!! \n");
   }
   else{
 	  echo "Thành công !!! Xem dữ liệu đã ghi lại <a href='log.txt'>Xem</a>";
 	  $count = count($page['data']);
-	  fwrite($file,"$time : $firt_post_id - Thành công - Share : $count !!! \n");
+	  fwrite($file,"$time : $first_post_id - Thành công - Share : $count !!! \n");
   }
   function request($url){
 	$ch = curl_init();
