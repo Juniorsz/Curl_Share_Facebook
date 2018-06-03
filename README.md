@@ -15,6 +15,9 @@
 ```php
  $page_avoid = ["123","456","789"];
 ```
+
+**Hướng dẫn chi tiết** ( Video ) : [Xem Video](https://youtu.be/OlhK2p5sa_E)
+
 + **Localhost** : Sau khi chỉnh sửa xong bạn chỉ cần chạy file là xong ( Có thể thay đổi thời gian chạy Curl tại dòng **46** )
 ```html
   <meta http-equiv="refresh" content="30"> <!-- Ở đây mình để 30s chạy file 1 lần -->
