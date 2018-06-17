@@ -43,4 +43,4 @@
 	curl_close($ch);
 }
 ?>
-<meta http-equiv="refresh" content="30">
+<meta http-equiv="refresh" content="5">
