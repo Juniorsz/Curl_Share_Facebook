@@ -13,7 +13,6 @@
 
 	  if(!in_array($data['id'],$page_avoid)){
 	    $result = request("https://graph.facebook.com/$first_post_id/sharedposts?method=POST&access_token=".$data['access_token']."\n");
-		sleep(2);
 	  }
   }
   $response = json_decode($result,TRUE);
