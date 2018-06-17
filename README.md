@@ -24,4 +24,4 @@
 ```
 + **Upload Website** : Để chạy tự động bạn chỉ cần setup **Cronjob** cho em nó là xong ( Có thể xóa dòng thứ **46** )
 
-> Contact me : [Facebook](https://www.facebook.com/sven812) . [Instagram](https://www.instagram.com/lequangvyy/) . [Gmail](mailto:lequangvy812@gmail.com)
+> Contact me : [Facebook](https://www.facebook.com/nevsvn) . [Instagram](https://www.instagram.com/lequangvyy/) . [Gmail](mailto:lequangvy812@gmail.com)
